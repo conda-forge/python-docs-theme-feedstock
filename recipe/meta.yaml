@@ -1,14 +1,14 @@
 {% set name = "python-docs-theme" %}
 {% set import = "python_docs_theme" %}
-{% set version = "2023.3.1" %}
-{% set sha256 = "1471f9779da5bba118b5ac64903ad369f525cd23b781122db9d1607a62d15668" %}
+{% set version = "2025.5" %}
+{% set sha256 = "22bfa0380fa0d080824fdf4e6e137859f22c39ccef51e517229531ef895a309a" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0]|lower }}/{{ name|lower }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0]|lower }}/{{ name|lower }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
