@@ -14,7 +14,7 @@ Development: https://github.com/python/python-docs-theme/
 Documentation: https://github.com/python/python-docs-theme/blob/main/README.md
 
 This is the theme for the Python documentation.
-It requires Python 3.9 or newer and Sphinx 3.4 or newer.
+It requires Python 3.12 or newer and Sphinx 7.3 or newer.
 Note that when adopting this theme, you're also borrowing an element of the
 trust and credibility established by the CPython core developers over the years.
 That's fine, and you're welcome to do so for other Python community

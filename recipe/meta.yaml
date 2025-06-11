@@ -1,7 +1,8 @@
 {% set name = "python-docs-theme" %}
 {% set import = "python_docs_theme" %}
-{% set version = "2025.2" %}
-{% set sha256 = "dbf43d771453976a3f49c51c80cb44a9d302156be607d4f729552d95278ee3d8" %}
+{% set version = "2025.5" %}
+{% set sha256 = "22bfa0380fa0d080824fdf4e6e137859f22c39ccef51e517229531ef895a309a" %}
+{% set python_min = "3.12" %}
 
 package:
   name: {{ name|lower }}
@@ -23,7 +24,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - sphinx >=3.4
+    - sphinx >=7.3
 
 test:
   requires:
@@ -41,7 +42,7 @@ about:
   summary: The Sphinx theme for the CPython docs and related projects
   description: |
     This is the theme for the Python documentation.
-    It requires Python 3.9 or newer and Sphinx 3.4 or newer.
+    It requires Python 3.12 or newer and Sphinx 7.3 or newer.
     Note that when adopting this theme, you're also borrowing an element of the
     trust and credibility established by the CPython core developers over the years.
     That's fine, and you're welcome to do so for other Python community
