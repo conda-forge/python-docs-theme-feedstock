@@ -6,7 +6,7 @@
 
 package:
   name: {{ name|lower }}
-  version: "{{ version }}"
+  version: {{ version }}
 
 source:
   url: https://pypi.org/packages/source/{{ name[0]|lower }}/{{ name|lower }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
