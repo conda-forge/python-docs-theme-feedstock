@@ -20,7 +20,8 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - flit-core >=3.7
+    - babel
+    - hatchling
     - pip
   run:
     - python >={{ python_min }}
