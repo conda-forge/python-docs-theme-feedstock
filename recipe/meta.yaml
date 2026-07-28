@@ -2,7 +2,6 @@
 {% set import = "python_docs_theme" %}
 {% set version = "2026.7" %}
 {% set sha256 = "465431be2ebc5239e8f41b0acfae0cf8d842b50ec2fea549f61d9e6a3802432d" %}
-{% set python_min = "3.12" %}
 
 package:
   name: {{ name|lower }}
