@@ -1,8 +1,7 @@
 {% set name = "python-docs-theme" %}
 {% set import = "python_docs_theme" %}
-{% set version = "2026.4" %}
-{% set sha256 = "a815f80c5a09f734449eb2498fbcbad05340976a7a543e431f57de92218a9315" %}
-{% set python_min = "3.12" %}
+{% set version = "2026.7" %}
+{% set sha256 = "465431be2ebc5239e8f41b0acfae0cf8d842b50ec2fea549f61d9e6a3802432d" %}
 
 package:
   name: {{ name|lower }}
@@ -20,7 +19,8 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - flit-core >=3.7
+    - babel
+    - hatchling
     - pip
   run:
     - python >={{ python_min }}
