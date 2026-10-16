@@ -1,7 +1,7 @@
 {% set name = "python-docs-theme" %}
 {% set import = "python_docs_theme" %}
-{% set version = "2026.9" %}
-{% set sha256 = "1a400cb5e6ac6c8b4788eb0a98067a8c35e8aea15e38941e90a7f764582702fc" %}
+{% set version = "2026.9.1" %}
+{% set sha256 = "575743d4c38f39c8615c564269bb3eac5856c1e0191e5798168656cff828ec59" %}
 
 package:
   name: {{ name|lower }}
@@ -38,7 +38,9 @@ test:
 about:
   home: https://github.com/python/python-docs-theme/
   license: PSF-2.0
-  license_file: LICENSE
+  license_file:
+    - LICENSE
+    - python_docs_theme/static/fonts/OFL.txt
   summary: The Sphinx theme for the CPython docs and related projects
   description: |
     This is the theme for the Python documentation.
