@@ -38,7 +38,9 @@ test:
 about:
   home: https://github.com/python/python-docs-theme/
   license: PSF-2.0
-  license_file: LICENSE
+  license_file:
+    - LICENSE
+    - python_docs_theme/static/fonts/OFL.txt
   summary: The Sphinx theme for the CPython docs and related projects
   description: |
     This is the theme for the Python documentation.
